@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+  Available Targets:
+
+  /t:Run
+    Runs ConsoleApplicationTest
+
+  -->
+
+  <PropertyGroup>
+    <RunCommand>&quot;TestApps\ConsoleApplicationTest.exe&quot;</RunCommand>
+  </PropertyGroup>
+
+  <Target Name="Run">
+    <Exec Command="$(RunCommand)"/>
+  </Target>
+
+</Project>
