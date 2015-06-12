@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <VerifyCommand>&quot;TestApps\verify.ps1&quot;</VerifyCommand>
+    <VerifyCommand>&quot;powershell&quot; TestApps\verify.ps1</VerifyCommand>
   </PropertyGroup>
 
   <Target Name="Run">
