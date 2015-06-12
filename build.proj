@@ -6,14 +6,25 @@
   /t:Run
     Runs ConsoleApplicationTest
 
+  /t:Verify
+    Verifies if ConsoleApplicationTest runs properly
+
   -->
 
   <PropertyGroup>
     <RunCommand>&quot;TestApps\ConsoleApplicationTest.exe&quot;</RunCommand>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <VerifyCommand>&quot;TestApps\verify.ps1&quot;</VerifyCommand>
+  </PropertyGroup>
+
   <Target Name="Run">
     <Exec Command="$(RunCommand)"/>
+  </Target>
+
+  <Target Name="Verify">
+    <Exec Command="$(VerifyCommand)"/>
   </Target>
 
 </Project>
