@@ -14,7 +14,7 @@ function compile
 
   mkdir TestApps\cache
 
-  TestApps\compile.bat TestApps TestApps\cache
+  .\TestApps\compile.bat TestApps TestApps\cache
 
   if ($LastExitCode -ne 0) {
     throw "Compile failed with exit code $LastExitCode."
@@ -25,7 +25,7 @@ function compile
 
 function detect
 {
-  bin\detect.bat TestApps
+  .\bin\detect.bat TestApps
 
   if ($LastExitCode -ne 0) {
     throw "Detect failed with exit code $LastExitCode."
