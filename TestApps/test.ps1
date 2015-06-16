@@ -1,4 +1,4 @@
-function verify
+function test_verify
 {
   $output=$(TestApps\ConsoleApplicationTest.exe)
 
@@ -9,7 +9,7 @@ function verify
   echo "Verify is ok"
 }
 
-function compile
+function test_compile
 {
 
   mkdir TestApps\cache
@@ -23,7 +23,7 @@ function compile
   echo "Compile is ok"
 }
 
-function detect
+function test_detect
 {
   .\bin\detect.bat TestApps
 
@@ -34,7 +34,7 @@ function detect
   echo "Detect is ok"
 }
 
-function release
+function test_release
 {
   $output=$(bin\release.bat)
 
@@ -46,3 +46,8 @@ function release
 
   echo "Release is ok"
 }
+
+test_detect
+test_compile
+test_verify
+test_release
