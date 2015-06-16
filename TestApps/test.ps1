@@ -6,7 +6,7 @@ function verify
     throw "Output is not 'Hello World!'"
   }
 
-  exit 0
+  echo "Verify is ok"
 }
 
 function compile
@@ -20,7 +20,7 @@ function compile
     throw "Compile failed with exit code $LastExitCode."
   }
 
-  exit 0
+  echo "Compile is ok"
 }
 
 function detect
@@ -31,7 +31,7 @@ function detect
     throw "Detect failed with exit code $LastExitCode."
   }
 
-  exit 0
+  echo "Detect is ok"
 }
 
 function release
@@ -44,5 +44,5 @@ function release
     throw "Release failed with exit code $LastExitCode."
   }
 
-  exit 0
+  echo "Release is ok"
 }
